@@ -3,4 +3,5 @@
     <string name="app_name">LaVenganza 2. 0</string>
     <string name="nombre_de_usuario">Nombre de usuario</string>
     <string name="contrasena">Contraseña</string>
+    <string name="button_text">LOGIN</string>
 </resources>

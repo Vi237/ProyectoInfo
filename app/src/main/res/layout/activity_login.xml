@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0097A7"
+    android:background="@color/purple_200"
     tools:context=".LoginActivity"
     tools:ignore="MissingClass">
     <LinearLayout
@@ -27,10 +27,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_weight="0.4">
+            android:layout_weight="0.4"
+            android:layout_marginLeft="@dimen/login_horizontalMargin"
+            android:layout_marginRight="@dimen/login_horizontalMargin">
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextWhite">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -40,7 +43,9 @@
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextWhite"
+                android:layout_marginTop="@dimen/login_marginTop">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -48,6 +53,13 @@
                     android:hint="@string/contrasena">
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_text"
+                android:layout_marginTop="@dimen/login_marginTop"
+                android:theme="@style/RaiseButtonDark">
+            </Button>
         </LinearLayout>
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
