@@ -20,6 +20,13 @@
         <item name="colorControlNormal">@color/editText_white</item>
         <item name="colorControlActivated">@color/editText_white</item>
     </style>
+    <style name="EditTextBlack" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">@dimen/editText_textSise</item>
+        <item name="android:textColorHint">@color/editText_black</item>
+        <item name="android:textColorPrimary">@color/editText_black</item>
+        <item name="colorControlNormal">@color/editText_black</item>
+        <item name="colorControlActivated">@color/editText_black</item>
+    </style>
     <style name="RaiseButtonDark" parent="Theme.AppCompat.Light">
         <item name="colorButtonNormal">#00838F</item>
         <item name="colorControlHighlight">@color/teal_700</item>
