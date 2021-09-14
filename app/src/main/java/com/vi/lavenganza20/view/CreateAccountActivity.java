@@ -1,9 +1,11 @@
-package com.vi.lavenganza20;
+package com.vi.lavenganza20.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+
+import com.vi.lavenganza20.R;
 
 public class CreateAccountActivity extends AppCompatActivity {
 

@@ -14,4 +14,5 @@
     <color name="textView_textColor">#FFFFFF</color>
     <color name="background_cardview">#33070707</color>
     <color name="textColor_white">#FCFAFA</color>
+    <color name="item_white">#FAF7F7</color>
 </resources>
