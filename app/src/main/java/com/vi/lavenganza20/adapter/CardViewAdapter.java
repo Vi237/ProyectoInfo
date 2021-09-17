@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
 import com.vi.lavenganza20.R;
 import com.vi.lavenganza20.model.Image;
 
@@ -36,7 +37,8 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
     @Override
     public void onBindViewHolder(@NonNull CardViewFolder holder, int position) {
         Image image=images.get(position);
-        //imagen libreria externa
+        //imagen libreria externa--image
+        Picasso.get ().load (image.getUrlImagen()).into (holder.imageCardView);
         holder.usernameCardView.setText(image.getUsername());
         holder.cantidadDiasCardView.setText(image.getCantidadDiaz());
         holder.cantidadMeGustaCardView.setText(image.getCantidadMeGusta());

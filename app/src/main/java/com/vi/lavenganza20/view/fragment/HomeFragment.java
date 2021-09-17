@@ -92,16 +92,16 @@ public class HomeFragment extends Fragment {
     //creamos lista de imagenes
     public ArrayList<Image> buidImages(){
         ArrayList<Image>images=new ArrayList<>();
-        images.add(new Image("","Carlos Valdivia","2 dias","1 me gusta"));
-        images.add(new Image("","Kim Taehyung","3 dias","2 me gusta"));
-        images.add(new Image("","Park jimin","2 dias","3 me gusta"));
-        images.add(new Image("","Lee Chae Rin","5 dias","4 me gusta"));
-        images.add(new Image("","Wang Yibo","6 dias","5 me gusta"));
-        images.add(new Image("","Xiao Zhan","4 dias","6 me gusta"));
-        images.add(new Image("","Min Yoon-gi","2 dias","7 me gusta"));
-        images.add(new Image("","Jung Ho-seok","2 dias","8 me gusta"));
-        images.add(new Image("","Park Shin-hye","6 dias","3 me gusta"));
-        images.add(new Image("","Bae Su-ji","9 dias","1 me gusta"));
+        images.add(new Image("https://partedeexistencia.com/wp-content/uploads/2017/02/r%C3%ADo-Torotoro-Toro-Toro-Bolivia.jpg","Carlos Valdivia","2 dias","1 me gusta"));
+        images.add(new Image("https://boliviamia.net/Images/Tourpics/atop-deathroad-02.jpg","Kim Taehyung","3 dias","2 me gusta"));
+        images.add(new Image("https://boliviamia.net/Images/Tourpics/atop-titicaca-04.jpg","Park jimin","2 dias","3 me gusta"));
+        images.add(new Image("https://tipsparatuviaje.com/wp-content/uploads/2019/07/parque-nacional-tunari.jpg","Lee Chae Rin","5 dias","4 me gusta"));
+        images.add(new Image("https://tipsparatuviaje.com/wp-content/uploads/2019/07/reserva-nacional-eduardo-abaroa.jpg","Wang Yibo","6 dias","5 me gusta"));
+        images.add(new Image("https://abarrons.com/wp-content/uploads/2019/11/Jardin-botanico-Barron-rent-a-car.jpg","Xiao Zhan","4 dias","6 me gusta"));
+        images.add(new Image("https://abarrons.com/wp-content/uploads/2019/11/Lomas-de-Arena-Barron-rent-a-Car-Destinos-turisticos.jpg","Min Yoon-gi","2 dias","7 me gusta"));
+        images.add(new Image("https://boliviamia.net/Images/Tourpics/atop-uyuni-01.jpg","Jung Ho-seok","2 dias","8 me gusta"));
+        images.add(new Image("https://javitour.com/wp-content/uploads/2018/08/lugares-m%C3%A1s-emblem%C3%A1ticos-de-Corea-del-Sur_opt-4.jpg","Park Shin-hye","6 dias","3 me gusta"));
+        images.add(new Image("https://eng.taiwan.net.tw/att/1/big_scenic_spots/pic_704_11.jpg","Bae Su-ji","9 dias","1 me gusta"));
         return images;
     }
 }
