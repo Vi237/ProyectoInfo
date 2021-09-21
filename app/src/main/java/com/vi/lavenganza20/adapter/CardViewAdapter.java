@@ -1,6 +1,7 @@
 package com.vi.lavenganza20.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.squareup.picasso.Picasso;
 import com.vi.lavenganza20.R;
 import com.vi.lavenganza20.model.Image;
+import com.vi.lavenganza20.view.ImageDetailActivity;
 
 import java.util.ArrayList;
 
@@ -42,6 +44,14 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
         holder.usernameCardView.setText(image.getUsername());
         holder.cantidadDiasCardView.setText(image.getCantidadDiaz());
         holder.cantidadMeGustaCardView.setText(image.getCantidadMeGusta());
+        //onclicklistener
+        holder.imageCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(activity, ImageDetailActivity.class);
+                activity.startActivity(intent);
+            }
+        });
     }
 
     @Override

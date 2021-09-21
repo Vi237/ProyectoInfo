@@ -21,4 +21,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_home_fragment">Home</string>
+    <string name="text_megusta_image_detail">me gusta</string>
+    <string name="text_cantidad_megusta_image_detail">10</string>
+    <string name="text_title_image_detail">"Todo copas en la playa"</string>
+    <string name="text_content_image_detail">여기 붙어라 모두 모여라 WE GON\' PARTY LIKE 리리리라라라 맘을 열어라 머릴 비워라 불을 지펴라 리리리라라라. 정답은 묻지 말고 그대로 받아들여 느낌대로 가 ALRIGHT 하늘을 마주하고 두 손을 다 위로 저 위로 날뛰고 싶어 OH</string>
 </resources>
