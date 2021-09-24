@@ -2,6 +2,8 @@ package com.vi.lavenganza20.adapter;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
+import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityOptionsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
@@ -47,9 +50,16 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
         //onclicklistener
         holder.imageCardView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent intent=new Intent(activity, ImageDetailActivity.class);
-                activity.startActivity(intent);
+                if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.LOLLIPOP){
+                    Explode explode=new Explode();
+                    explode.setDuration(1000);
+                    activity.getWindow().setExitTransition(explode);
+                    activity.startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(activity,view,activity.getString(R.string.transitionName_imageCardView)).toBundle());
+                }else {
+                    activity.startActivity(intent);
+                }
             }
         });
     }
